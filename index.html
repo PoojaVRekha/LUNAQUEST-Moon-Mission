@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUNAQUEST - Mission Lunar Base 30</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="welcome-screen">
+
+        <!-- WELCOME SCREEN -->
+        <section id="welcomeScreen">
+
+            <h1>LUNAQUEST</h1>
+            <h2>MISSION LUNAR BASE 30</h2>
+
+            <p>Welcome, Junior Astronaut!</p>
+
+            <p>
+                Your mission is to lead a team of four astronauts
+                and keep their Moon base alive for 30 days.
+            </p>
+
+            <p>
+                Make smart decisions, manage resources,
+                and overcome challenges to complete your mission.
+            </p>
+
+            <button id="startButton">START MISSION 🚀</button>
+
+        </section>
+
+
+        <!-- MISSION BRIEFING -->
+        <section id="briefingScreen" style="display: none;">
+
+            <h1>MISSION BRIEFING</h1>
+            <h2>MISSION LUNAR BASE 30</h2>
+
+            <p>🌙 Destination: The Moon</p>
+            <p>👩‍🚀 Crew: 4 Astronauts</p>
+            <p>📅 Duration: 30 Days</p>
+
+            <h2>YOUR OBJECTIVES</h2>
+
+            <p>💧 Maintain life support</p>
+            <p>⚡ Manage electrical power</p>
+            <p>🛡️ Protect the lunar base</p>
+            <p>🌱 Maintain food production</p>
+
+            <button id="enterBaseButton">ENTER LUNAR BASE</button>
+
+        </section>
+
+
+        <!-- MISSION CONTROL -->
+        <section id="missionControl" style="display: none;">
+
+            <h1>MISSION CONTROL 🌙</h1>
+
+            <h2>
+                DAY <span id="day">1</span> / 30
+            </h2>
+
+            <p>Welcome to your lunar base, Commander!</p>
+
+            <!-- RESOURCE PANEL -->
+     
+<div class="resource">
+
+    <p>💧 Life Support: <span id="lifeSupport">100</span>%</p>
+    <div class="meter">
+        <div id="lifeBar" class="meter-fill"></div>
+    </div>
+
+    <p>⚡ Power: <span id="power">100</span>%</p>
+    <div class="meter">
+        <div id="powerBar" class="meter-fill"></div>
+    </div>
+
+    <p>🛡️ Radiation Protection: <span id="protection">60</span>%</p>
+    <div class="meter">
+        <div id="shieldBar" class="meter-fill"></div>
+    </div>
+
+</div>
+
+
+<!-- NASA SPACE WEATHER PANEL -->
+
+<div class="event-panel">
+
+    <h2>☀️ NASA SPACE WEATHER</h2>
+
+    <p>
+        Check real space-weather updates from NASA.
+    </p>
+
+    <button id="nasaButton">
+        GET NASA UPDATES 🚀
+    </button>
+
+    <p id="nasaData">
+        NASA updates have not been loaded yet.
+    </p>
+
+    <p>
+        Source: NASA DONKI Space Weather Database
+    </p>
+
+</div>
+
+
+            <!-- DAILY ACTIONS -->
+            <h2>DAILY ACTIONS</h2>
+
+            <p>Choose one action to help your lunar base survive.</p>
+
+            <button id="rechargeButton">
+                Recharge Solar Batteries ⚡
+            </button>
+
+            <button id="lifeSupportButton">
+                Maintain Life Support 💧
+            </button>
+
+            <button id="shieldButton">
+                Improve Radiation Shielding 🛡️
+            </button>
+
+            <button id="greenhouseButton">
+                Maintain Greenhouse 🌱
+            </button>
+
+            <p id="statusMessage">
+                Choose your first action, Commander!
+            </p>
+
+            <div class="event-panel">
+    <h2>🚨 MISSION ALERT</h2>
+    <p id="eventMessage">No emergency alerts. Base systems stable.</p>
+</div>
+
+
+
+            <!-- CREW -->
+            <h2>YOUR CREW</h2>
+
+            <p>👩‍🚀 4 Astronauts — Ready for duty!</p>
+
+            <p>
+                Your mission has officially begun.
+                Good luck, Commander!
+            </p>
+
+        </section>
+
+
+<!-- MISSION RESULT SCREEN -->
+
+<!-- MISSION RESULT SCREEN -->
+<section id="resultScreen" style="display: none;">
+
+    <h1>🌙 MISSION COMPLETE!</h1>
+
+    <h2>MISSION LUNAR BASE 30</h2>
+
+    <p>Congratulations, Commander!</p>
+
+    <p>Your crew successfully completed the 30-day lunar mission.</p>
+
+    <h2>🏆 FINAL MISSION REPORT</h2>
+
+    <p>👩‍🚀 Astronauts: 4</p>
+    <p>📅 Mission Duration: 30 Days</p>
+    <p>🌙 Destination: The Moon</p>
+
+    <h2>FINAL RESOURCE STATUS</h2>
+
+    <p>💧 Life Support: <span id="finalLife">0</span>%</p>
+    <p>⚡ Power: <span id="finalPower">0</span>%</p>
+    <p>🛡️ Radiation Protection: <span id="finalShield">0</span>%</p>
+
+    <h2>⭐ MISSION SCORE</h2>
+
+    <p><span id="missionScore">0</span> / 300</p>
+
+    <h2>🎖️ ACHIEVEMENT</h2>
+
+    <p id="achievement">Junior Mission Commander</p>
+
+    <p>You are now officially a Junior Mission Commander!</p>
+
+</section>
+
+
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
